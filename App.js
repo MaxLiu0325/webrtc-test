@@ -16,7 +16,7 @@ import {
   globalCallRef,
   GlobalCallUI,
   globalCall,
-} from "react-native-webrtc-simple/UIKit";
+} from "./src/components/UIKit";
 
 export default function App() {
   const [stream, setStream] = useState(null);
