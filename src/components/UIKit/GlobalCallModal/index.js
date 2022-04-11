@@ -10,7 +10,7 @@ import {
 import { RTCView } from "react-native-webrtc";
 import WebrtcSimple from "react-native-webrtc-simple";
 import { CallEvents } from "react-native-webrtc-simple/WebRtcSimple/contains";
-import { Timer } from "./../index";
+import { Timer } from "./../Timer";
 import { styles } from "./styles";
 
 let interval = null;
