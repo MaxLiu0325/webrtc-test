@@ -7,8 +7,8 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { RTCView } from "react-native-webrtc";
 import WebrtcSimple from "react-native-webrtc-simple";
+import { RTCView } from "react-native-webrtc";
 import { CallEvents } from "react-native-webrtc-simple/WebRtcSimple/contains";
 import { Timer } from "./../Timer";
 import { styles } from "./styles";
@@ -24,6 +24,7 @@ export const globalCall = {
 };
 
 StatusBar.setBarStyle("dark-content");
+
 const GlobalCallUI = React.forwardRef((props, ref) => {
   const [visible, setVisible] = useState(false);
   const stream = WebrtcSimple.getLocalStream();
