@@ -26,8 +26,8 @@ export default function App() {
 
   useEffect(() => {
     const configuration = {
-      optional: null,
-      key: Math.random().toString(36).substring(2, 4), //optional
+      // optional: null,
+      // key: Math.random().toString(36).substring(2, 4), //optional
     };
 
     WebrtcSimple.start(configuration)
@@ -59,6 +59,9 @@ export default function App() {
 
       if (type === "END_CALL") {
         setRemoteStream(null);
+      }
+      if (type === "MESSAGE") {
+        console.log('userData :>> ', userData);
       }
     });
 
